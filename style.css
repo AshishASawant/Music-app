@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    font-family:'Segoe UI';
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: slategrey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+    width: 30rem;
+    background-color: azure;
+    border-radius: 1rem;
+}
+.song-name{
+    text-transform: capitalize;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+.art-name{
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: .5rem;
+    font-size: 2rem;
+    opacity: .4;
+}
+.disk{
+    margin-top: 1.8rem;
+    text-align: center;
+    animation: animate 20s  linear infinite;
+    animation-play-state: paused;
+    margin-bottom: 1rem;
+}
+.disk img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    box-shadow: 0rem 0rem .4rem .5rem burlywood;
+}
+.animation{
+    animation-play-state: running;
+}
+.controlls{
+    bottom: 1rem;
+    height: 6rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 5rem;
+}
+.fas{
+    cursor: pointer;
+}
+
+.play{
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.pb-container{
+    margin: auto;
+    width: 90%;
+    margin-top: 2rem;
+    position: relative;
+    margin-bottom: .8rem;
+}
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    background-color: black;
+    border-radius: 5rem;
+    height: .7rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: aqua;
+    box-shadow: -40rem 0 0 40rem aqua;
+}
+.current-time{
+    font-size: 1.5rem;
+    display: inline;
+    font-family: 'Lucida Sans';
+}
+.total-time{
+    position: absolute;
+    font-size: 1.5rem;
+    display: inline;
+    font-family: 'Lucida Sans';
+    right: 0rem;
+}
+
+@keyframes animate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

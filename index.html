@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+   <audio src="audio/audio1.mp3" preload="metadata"></audio>
+    <div class="container">
+        <h1 class="song-name">song name</h1>
+        <p class="art-name">artist name</p>
+        <div class="disk">
+            <img src="image/img1.jpg" alt="img">
+        </div>
+        <div class="pb-container">
+            <input type="range" value="0" class="seek-bar">
+            <p class="current-time">0:00</p>
+            <p class="total-time">0:00</p>
+        </div>
+        <div class="controlls">
+            <i class="fas fa-light fa-chevron-left"></i>
+            <i class="fas fa-light fa-play play" ></i>
+            <i class="fas fa-light fa-chevron-right"></i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
